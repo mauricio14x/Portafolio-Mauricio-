@@ -401,10 +401,9 @@ Para aprovechar el espacio aéreo sin interrumpir el comercio, se levantan 6 pis
                 name: 'Fotos',
                 images: [
                     '/Proyectos/Galerias-Holanda/Fotos/1.png',
-                    '/Proyectos/Galerias-Holanda/Fotos/Gemini_Generated_Image_xe5qe9xe5qe9xe5q.png',
-                    '/Proyectos/Galerias-Holanda/Fotos/Gemini_Generated_Image_xe5qe9xe5qe9xe5qe (1).png',
-                    '/Proyectos/Galerias-Holanda/Fotos/wmremove-transformed.png',
-                    '/Proyectos/Galerias-Holanda/Fotos/wmremove-transformed (1).png',
+                    '/Proyectos/Galerias-Holanda/Fotos/Gemini_Generated_Image_e5qe9xe5qe9xe5qe.png',
+                    '/Proyectos/Galerias-Holanda/Fotos/Gemini_Generated_Image_59p17z59p17z59p1.png',
+                    '/Proyectos/Galerias-Holanda/Fotos/wmremove-transformed%20(1).png',
                     '/Proyectos/Galerias-Holanda/Fotos/z.png',
                     '/Proyectos/Galerias-Holanda/Fotos/z1.png'
                 ]
@@ -576,7 +575,7 @@ export const education: Education[] = [
 export const contactInfo: ContactInfo = {
     phone: '+56 9 2030 7035',
     email: 'contacto@arquitectura.cl',
-    location: 'Quilicura, Santiago, Chile',
+    location: 'Santiago, Chile',
 };
 
 export const profileText = `Estudiante y Licenciado en Arquitectura por la Universidad Diego Portales, con interés en la arquitectura del paisaje y el diseño urbano, abordando tanto la escala macro como micro. Mi enfoque considera el análisis territorial y urbano —incluyendo niveles de cuenca y estrategias de prevención de desastres naturales— integrando soluciones basadas en la naturaleza, junto con intervenciones a escala humana orientadas a mejorar la calidad de vida de manera cercana e inmediata.
