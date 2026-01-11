@@ -313,8 +313,8 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                                                                         <ChevronRight size={14} className={`transition-transform ${expandedCategories.has(category.name) ? 'rotate-90' : ''}`} />
                                                                     </button>
 
-                                                                    <AnimatePresence>
-                                                                        {expandedCategories.has(category.name) && (
+                                                                    {expandedCategories.has(category.name) && (
+                                                                        <AnimatePresence>
                                                                             <motion.div
                                                                                 initial={{ height: 0 }}
                                                                                 animate={{ height: 'auto' }}
@@ -340,8 +340,8 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                                                                                     </div>
                                                                                 ))}
                                                                             </motion.div>
-                                                                        )}
-                                                                    </AnimatePresence>
+                                                                        </AnimatePresence>
+                                                                    )}
                                                                 </>
                                                             )}
                                                         </div>
