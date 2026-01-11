@@ -9,9 +9,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
-    // Debug: verificar si subsubtitle existe
-    console.warn('ProjectCard - project.title:', project.title);
-    console.warn('ProjectCard - project.subsubtitle:', project.subsubtitle);
+
 
     return (
         <motion.div
