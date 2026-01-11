@@ -71,20 +71,21 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
+                        transition={{ duration: 0.2 }}
                         onClick={onClose}
-                        className="fixed inset-0 bg-arch-black/90 z-50 backdrop-blur-sm"
+                        className="fixed inset-0 bg-arch-black/95 z-50"
                     />
 
                     {/* Modal - 3 Column Layout */}
                     <motion.div
-                        initial={{ opacity: 0, scale: 0.95 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        exit={{ opacity: 0, scale: 0.95 }}
-                        transition={{ duration: 0.3 }}
-                        className="fixed inset-4 md:inset-8 z-50 bg-arch-white/95 backdrop-blur-xl rounded-lg overflow-hidden flex flex-col shadow-2xl max-w-[1800px] mx-auto border border-arch-gray-light/30"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: 20 }}
+                        transition={{ duration: 0.2, ease: "easeOut" }}
+                        className="fixed inset-4 md:inset-8 z-50 bg-arch-white rounded-lg overflow-hidden flex flex-col shadow-2xl max-w-[1800px] mx-auto border border-arch-gray-light/30"
                     >
                         {/* Header */}
-                        <div className="flex items-center justify-between p-5 border-b border-arch-gray-light bg-arch-white/80 backdrop-blur-md sticky top-0 z-10">
+                        <div className="flex items-center justify-between p-5 border-b border-arch-gray-light bg-arch-white sticky top-0 z-10">
                             <div className="flex-1">
                                 <h2 className="text-2xl md:text-3xl font-display font-bold">
                                     {project.title}
@@ -111,7 +112,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                                 <div className="lg:col-span-3 space-y-4">
                                     <div className="lg:sticky lg:top-6 space-y-4">
                                         {/* Quick Info */}
-                                        <div className="bg-arch-white/50 backdrop-blur-md p-4 rounded-lg space-y-3 border border-arch-gray-light/30 shadow-lg">
+                                        <div className="bg-arch-white p-4 rounded-lg space-y-3 border border-arch-gray-light shadow-lg">
                                             <h3 className="text-sm font-semibold uppercase tracking-wide text-arch-accent">
                                                 Información
                                             </h3>
@@ -153,7 +154,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                                         </div>
 
                                         {/* Location */}
-                                        <div className="bg-arch-accent/10 backdrop-blur-md p-4 rounded-lg border-l-4 border-arch-accent shadow-lg">
+                                        <div className="bg-arch-accent/10 p-4 rounded-lg border-l-4 border-arch-accent shadow-lg">
                                             <div className="flex items-start gap-2">
                                                 <MapPin size={16} className="text-arch-accent flex-shrink-0 mt-0.5" />
                                                 <div>
@@ -165,7 +166,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
 
                                         {/* Objetivo */}
                                         {project.objetivo && (
-                                            <div className="bg-gradient-to-br from-arch-accent/10 to-transparent backdrop-blur-sm p-4 rounded-lg border border-arch-accent/30 shadow-md">
+                                            <div className="bg-arch-accent/5 p-4 rounded-lg border border-arch-accent/30 shadow-md">
                                                 <div className="flex items-start gap-2 mb-2">
                                                     <Target size={16} className="text-arch-accent flex-shrink-0 mt-0.5" />
                                                     <h4 className="text-xs font-semibold uppercase tracking-wide text-arch-accent">
@@ -180,7 +181,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
 
                                         {/* Objetivos Preview */}
                                         {project.objetivosEspecificos && project.objetivosEspecificos.length > 0 && (
-                                            <div className="bg-arch-white/40 backdrop-blur-sm p-4 rounded-lg border border-arch-gray-light/40 shadow-md">
+                                            <div className="bg-arch-white/60 p-4 rounded-lg border border-arch-gray-light/40 shadow-md">
                                                 <div className="flex items-start gap-2 mb-2">
                                                     <Users size={16} className="text-arch-accent flex-shrink-0" />
                                                     <h4 className="text-xs font-semibold uppercase tracking-wide text-arch-accent">
@@ -224,7 +225,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                                             <h3 className="text-xl font-display font-bold mb-4 pb-2 border-b border-arch-accent">
                                                 Programa
                                             </h3>
-                                            <div className="bg-arch-white/30 backdrop-blur-sm p-4 rounded-lg border border-arch-gray-light/30">
+                                            <div className="bg-arch-white/50 p-4 rounded-lg border border-arch-gray-light/30">
                                                 <pre className="whitespace-pre-wrap font-sans text-sm text-arch-gray leading-relaxed">
                                                     {project.programa}
                                                 </pre>
@@ -238,7 +239,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                                             <h4 className="text-base font-display font-semibold mb-3">Objetivos Específicos Completos</h4>
                                             <div className="grid gap-2">
                                                 {project.objetivosEspecificos.map((objetivo, index) => (
-                                                    <div key={index} className="flex items-start gap-2 p-3 bg-arch-white/60 backdrop-blur-sm border border-arch-gray-light/40 rounded-lg text-sm shadow-sm">
+                                                    <div key={index} className="flex items-start gap-2 p-3 bg-arch-white/80 border border-arch-gray-light/40 rounded-lg text-sm shadow-sm">
                                                         <span className="flex-shrink-0 w-5 h-5 bg-arch-accent text-arch-white rounded-full flex items-center justify-center text-xs font-bold">
                                                             {index + 1}
                                                         </span>
@@ -301,10 +302,10 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                                                                     <AnimatePresence>
                                                                         {expandedCategories.has(category.name) && (
                                                                             <motion.div
-                                                                                initial={{ opacity: 0, height: 0 }}
-                                                                                animate={{ opacity: 1, height: 'auto' }}
-                                                                                exit={{ opacity: 0, height: 0 }}
-                                                                                transition={{ duration: 0.2 }}
+                                                                                initial={{ height: 0 }}
+                                                                                animate={{ height: 'auto' }}
+                                                                                exit={{ height: 0 }}
+                                                                                transition={{ duration: 0.15, ease: "easeInOut" }}
                                                                                 className="space-y-2 overflow-hidden mt-2"
                                                                             >
                                                                                 {category.images.slice(1).map((image, index) => (
@@ -352,9 +353,10 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                                     className="fixed inset-0 bg-gray-100 z-[60]"
                                 />
                                 <motion.div
-                                    initial={{ opacity: 0, scale: 0.9 }}
-                                    animate={{ opacity: 1, scale: 1 }}
-                                    exit={{ opacity: 0, scale: 0.9 }}
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    exit={{ opacity: 0 }}
+                                    transition={{ duration: 0.15 }}
                                     className="fixed inset-8 z-[61] flex items-center justify-center"
                                 >
                                     {/* Close Button */}
@@ -403,10 +405,10 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
                                     {/* Image */}
                                     <motion.img
                                         key={selectedImage}
-                                        initial={{ opacity: 0, scale: 0.95 }}
-                                        animate={{ opacity: 1, scale: 1 }}
-                                        exit={{ opacity: 0, scale: 0.95 }}
-                                        transition={{ duration: 0.2 }}
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        exit={{ opacity: 0 }}
+                                        transition={{ duration: 0.1 }}
                                         src={selectedImage}
                                         alt="Vista ampliada"
                                         className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
