@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, MapPin, Calendar, Maximize2, Target, Users, ChevronRight, ChevronLeft } from 'lucide-react';
 import { Project } from '@/types';
@@ -16,6 +16,20 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
     const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
 
     if (!project) return null;
+
+    // Block body scroll when modal is open
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+
+        // Cleanup on unmount
+        return () => {
+            document.body.style.overflow = 'unset';
+        };
+    }, [isOpen]);
 
     const toggleCategory = (categoryName: string) => {
         const newExpanded = new Set(expandedCategories);
