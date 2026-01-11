@@ -1,0 +1,100 @@
+﻿=== raices-compartidas ===
+FOTOS (5):
+  3.png
+  Area común.png
+  dfgh.png
+  sdfg.png
+  Vista plaza.png
+PLANOS (3):
+  L2 examen_page-0001.jpg
+  L3 Examen copia_page-0001.jpg
+  L5 Examen_page-0001.jpg
+MAQUETAS (6):
+  1.jpg
+  2.jpg
+  3.jpg
+  4.jpg
+  5.jpg
+  6.jpg
+DETALLES (3):
+  1767760414480-587d7766-78e4-49c1-902d-88b7cff58ea6_1.png
+  Folleto_page-0001.jpg
+  L4 copia_page-0001.jpg
+
+=== Paseo-literario ===
+FOTOS (11):
+  Capa 1.png
+  Capa 2.png
+  Capa 3.png
+  Imagen de WhatsApp 2025-07-26 a las 10.41.15_35700015.jpg
+  Imagen de WhatsApp 2025-07-26 a las 10.41.26_c5483f7e.jpg
+  IMG_20241207_135123.jpg
+  Recurso 11.png
+  Recurso 12.png
+  Recurso 13.png
+  Recurso 14.png
+  Recurso16.jpg
+PLANOS (6):
+  PLANTA ARQ ubicacion 1 250.webp
+  PLANTA DE ARQ.webp
+  PLANTA DE TRAZADO.webp
+  Recurso 1@300x.webp
+  Recurso 2@300x.webp
+  Recurso 3@300x.webp
+MAQUETAS (5):
+  IMG_20241025_151853.jpg
+  IMG_20241025_154334.jpg
+  IMG_20241025_154532.jpg
+  Recurso 10.png
+  Recurso 9.png
+DETALLES (14):
+  1a1Detalle 1.webp
+  1a1Detalle 2.webp
+  4 (1).webp
+  4 (10).webp
+  4 (11).webp
+  4 (12).webp
+  4 (2).webp
+  4 (3).webp
+  4 (4).webp
+  4 (5).webp
+  4 (6).webp
+  4 (7).webp
+  4 (8).webp
+  4 (9).webp
+
+=== Atravieso-Ecuestre ===
+FOTOS (10):
+  20240104125456_IMG_1243.JPG
+  20240104130742_IMG_1269.JPG
+  img12.jpg
+  img15.jpg
+  img18.jpg
+  img21.jpg
+  img27.jpg
+  img30.jpg
+  img6.jpg
+  img9.jpg
+PLANOS (2):
+  planta taller de verano.webp
+  taller de verano cortes.webp
+MAQUETAS (17):
+  0a1.jpg
+  0A1EB8AC-DDDF-40D1-B99A-74B8E92A166C.jpeg
+  1 (1).jpeg
+  1 (4).jpeg
+  1 (5).jpeg
+  1 (6).jpeg
+  161BFC18-6229-46F2-B11B-BCC849425D28.jpeg
+  A34C70A4-7371-4C36-8C84-3942B36D6DA7.jpeg
+  B77D525D-0F25-4644-83D2-3089EAE0AF11.jpeg
+  IMG_3531.jpg
+  IMG_3604.jpg
+  IMG_3613.jpg
+  IMG_3618.jpg
+  IMG_3860.jpeg
+  IMG_3865.jpeg
+  IMG_3866.jpeg
+  IMG_3867.jpeg
+
+
