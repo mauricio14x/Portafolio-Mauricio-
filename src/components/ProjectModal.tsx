@@ -15,9 +15,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
     const [currentCategory, setCurrentCategory] = useState<string | null>(null);
     const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
 
-    if (!project) return null;
-
-    // Block body scroll when modal is open
+    // Block body scroll when modal is open - MUST be before any conditional returns
     useEffect(() => {
         if (isOpen) {
             document.body.style.overflow = 'hidden';
@@ -30,6 +28,8 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onClose })
             document.body.style.overflow = 'unset';
         };
     }, [isOpen]);
+
+    if (!project) return null;
 
     const toggleCategory = (categoryName: string) => {
         const newExpanded = new Set(expandedCategories);
