@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
 import { contactInfo } from '@/data/portfolio';
 
@@ -27,13 +27,13 @@ const Contact: React.FC = () => {
                         Contacto
                     </h2>
 
-                    <div className="grid md:grid-cols-2 gap-12">
+                    <div className="max-w-2xl mx-auto">
                         {/* Contact Information */}
                         <div>
-                            <h3 className="text-2xl font-display font-semibold mb-6">
+                            <h3 className="text-2xl font-display font-semibold mb-6 text-center">
                                 Información de Contacto
                             </h3>
-                            <p className="text-arch-gray mb-8 leading-relaxed">
+                            <p className="text-arch-gray mb-8 leading-relaxed text-center">
                                 Estoy disponible para colaboraciones, consultas y nuevos proyectos.
                                 No dudes en contactarme para discutir cómo podemos trabajar juntos.
                             </p>
@@ -69,65 +69,6 @@ const Contact: React.FC = () => {
                                 ))}
                             </div>
                         </div>
-
-                        {/* Contact Form */}
-                        <motion.div
-                            initial={{ opacity: 0, x: 20 }}
-                            animate={isVisible ? { opacity: 1, x: 0 } : {}}
-                            transition={{ duration: 0.6, delay: 0.3 }}
-                        >
-                            <h3 className="text-2xl font-display font-semibold mb-6">
-                                Enviar Mensaje
-                            </h3>
-                            <form className="space-y-6">
-                                <div>
-                                    <label htmlFor="name" className="block text-sm font-medium mb-2">
-                                        Nombre
-                                    </label>
-                                    <input
-                                        type="text"
-                                        id="name"
-                                        name="name"
-                                        className="w-full px-4 py-3 border border-arch-gray-light rounded-sm focus:outline-none focus:border-arch-accent transition-colors"
-                                        placeholder="Tu nombre"
-                                    />
-                                </div>
-
-                                <div>
-                                    <label htmlFor="email" className="block text-sm font-medium mb-2">
-                                        Email
-                                    </label>
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        name="email"
-                                        className="w-full px-4 py-3 border border-arch-gray-light rounded-sm focus:outline-none focus:border-arch-accent transition-colors"
-                                        placeholder="tu@email.com"
-                                    />
-                                </div>
-
-                                <div>
-                                    <label htmlFor="message" className="block text-sm font-medium mb-2">
-                                        Mensaje
-                                    </label>
-                                    <textarea
-                                        id="message"
-                                        name="message"
-                                        rows={5}
-                                        className="w-full px-4 py-3 border border-arch-gray-light rounded-sm focus:outline-none focus:border-arch-accent transition-colors resize-none"
-                                        placeholder="Cuéntame sobre tu proyecto..."
-                                    />
-                                </div>
-
-                                <button
-                                    type="submit"
-                                    className="w-full flex items-center justify-center gap-2 px-6 py-4 bg-arch-black text-arch-white font-medium rounded-sm hover:bg-arch-accent transition-colors"
-                                >
-                                    Enviar Mensaje
-                                    <Send size={18} />
-                                </button>
-                            </form>
-                        </motion.div>
                     </div>
                 </motion.div>
             </div>
